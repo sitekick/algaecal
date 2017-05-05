@@ -1,0 +1,12 @@
+@mixin panel-default {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+@mixin panel-heading {
+	background-color: inherit;
+	border: inherit;
+	color: inherit;
+}
+	

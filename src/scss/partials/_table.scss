@@ -1,0 +1,58 @@
+.tables {
+	
+	.panel-default {
+		@include panel-default;
+		border: 3px solid #000;
+		border-radius: 0;
+		
+		.panel-heading{
+			@include panel-heading;
+			border: none;
+			font-weight: bold;
+			
+			.panel-title{
+				font-size: 2em;
+				margin-bottom: .5em;
+				font-weight: normal;
+			}
+		}
+		
+		.panel-body {
+			padding-top: 0;
+		}
+	}
+}
+
+
+.table {
+	
+	thead {
+		border-top: 12px solid #000;
+		
+		th {
+				
+		&:nth-child(2){
+			text-align: right;
+		}
+		}
+	}
+	
+	tbody {
+		border-top: 6px solid #000;
+		
+		tr {
+			
+			td {
+				border: none;
+			
+			&:nth-child(2){
+				text-align: right;
+			}
+			}
+		}
+	& + tbody{
+		border-top: 5px solid #000;
+	}
+	}
+	
+}

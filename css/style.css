@@ -1,6 +1,145 @@
+/* ---Colors--- */
+header .panel-default {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+header .panel-default .panel-heading {
+  background-color: inherit;
+  border: inherit;
+  color: inherit;
+  padding: 5px 15px;
+}
+header .panel-default a.panel-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0 5px;
+}
+header .panel-default a.panel-title span {
+  color: #54B8CD;
+}
+header .panel-default a.panel-title:hover {
+  text-decoration: none;
+  background: #54B8CD;
+  color: #FFF;
+  border-radius: 5px;
+}
+header .panel-default a.panel-title:hover span {
+  color: inherit;
+}
+header .panel-default .panel-body {
+  padding: 5px 15px;
+}
+header .panel-default .panel-body .glyphicon {
+  background-color: #38A33F;
+  color: #FFF;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.jumbotron {
+  background-color: #4C813D;
+  background-image: url("../img/jumbotron_bg.png");
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+}
+.jumbotron h1 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.4;
+}
+.jumbotron h1 strong {
+  border-bottom: 4px solid #DB1814;
+}
+.jumbotron .panel-default {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: #FFF;
+  margin: 0;
+}
+.jumbotron .panel-default .panel-heading {
+  background-color: inherit;
+  border: inherit;
+  color: inherit;
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+.jumbotron .panel-default .panel-heading span:before, .jumbotron .panel-default .panel-heading span:after {
+  content: "\0336";
+}
+.container .jumbotron {
+  border-radius: 0;
+}
+
+.video .panel-default {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+.video .panel-heading {
+  background-color: inherit;
+  border: inherit;
+  color: inherit;
+}
+.video .panel-heading .panel-title {
+  font-weight: normal;
+  font-size: 1.25em;
+  line-height: 1.3;
+}
+
+.tables .panel-default {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  border: 3px solid #000;
+  border-radius: 0;
+}
+.tables .panel-default .panel-heading {
+  background-color: inherit;
+  border: inherit;
+  color: inherit;
+  border: none;
+  font-weight: bold;
+}
+.tables .panel-default .panel-heading .panel-title {
+  font-size: 2em;
+  margin-bottom: .5em;
+  font-weight: normal;
+}
+.tables .panel-default .panel-body {
+  padding-top: 0;
+}
+
+.table thead {
+  border-top: 12px solid #000;
+}
+.table thead th:nth-child(2) {
+  text-align: right;
+}
+.table tbody {
+  border-top: 6px solid #000;
+}
+.table tbody tr td {
+  border: none;
+}
+.table tbody tr td:nth-child(2) {
+  text-align: right;
+}
+.table tbody + tbody {
+  border-top: 5px solid #000;
+}
+
 body {
   padding-top: 50px;
   padding-bottom: 20px;
+}
+
+.row {
+  border: 1px solid #E4E4E4;
+  margin: 1em 0;
 }
 
 .products {

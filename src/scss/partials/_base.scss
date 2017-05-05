@@ -3,6 +3,14 @@ body {
     padding-bottom: 20px;
 }
 
+
+
+.row {
+	border: 1px solid #E4E4E4;
+	margin: 1em 0;
+}
+
+
 .products {
 	opacity: 0;
 	transition: opacity 2s;

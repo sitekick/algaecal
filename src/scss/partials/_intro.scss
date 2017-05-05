@@ -1,0 +1,62 @@
+.jumbotron {
+	background-color: $green-dull;
+	background-image: url('../img/jumbotron_bg.png');
+	background-position: center center;
+	background-size: cover;
+	height: 100%;
+	
+	h1 {
+		font-size: 2em;
+		margin: 0;
+		font-weight: normal;
+		line-height: 1.4;
+		
+		strong {
+			border-bottom: 4px solid $red;
+		}
+	}
+	.panel-default {
+		@include panel-default;
+		
+		color: #FFF;
+		margin: 0;
+	
+		
+		.panel-heading {
+			@include panel-heading;
+			
+			font-size: 1.6em;
+			text-transform: uppercase;
+			
+			span {
+			
+			&:before,
+			&:after {
+				content: "\0336";
+			}
+			}
+		}
+	}
+
+.container &{
+	border-radius: 0;
+}
+
+}
+
+.video {
+	
+	.panel-default {
+		@include panel-default;
+	}
+	
+	.panel-heading {
+		@include panel-heading;
+		
+		.panel-title {
+			font-weight: normal;
+			font-size: 1.25em;
+			line-height: 1.3;
+		}
+	}
+}
