@@ -9,7 +9,7 @@
 		<!--Styles-->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
-	<title>AlgaeCal</title>
+	<title>AlgaeCal Test</title>
 	</head>
 	<body>
 		<div class="container">
@@ -21,9 +21,9 @@
 				<div id="contact" class="col-sm-6">
 					<div class="panel">
 						<div class="panel-heading panel-default">
-							<h3 class="panel-title">Tap to Talk <small><a id="phoneNumber" href="tel:1-800-820-0184">1-800-820-0184</a></small></h3>
+							<a id="tapToTalk" class="panel-title" title="Tap to Talk">Tap to Talk <span></span></a>
 						</div>
-						<div class="panel-body">
+						<div id="speakToMessage" class="panel-body" style="visibility: hidden;">
 							<span class="glyphicon glyphicon-earphone"></span> Speak to our Bone Health Specialists!</span>			
 						</div>
 					</div>
@@ -39,15 +39,23 @@
 								<h2 class="panel-title">Build <strong>brand new bone</strong> WITHIN 6 MONTHS with this <strong>rare algae</strong> calcium ...even if you're 85!</h2>
 							</div>
 							<div class="panel-body">
-								{video}
+								<!--video-->
+								<script src="//fast.wistia.com/embed/medias/cecdwaq3dz.jsonp" defer></script>
+								<script src="//fast.wistia.com/assets/external/E-v1.js" defer></script>
+						        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+							        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+										<div class="wistia_embed wistia_async_cecdwaq3dz videoFoam=true autoPlay=false" style="height:100%;width:100%">&nbsp;</div>
+									</div>
+						        </div>
 							</div>
 						</div><!--/.panel-->
 					</div><!--/.column-->
 				</div>
 				<!--Products-->
+				<section id="bundles">
 				<div class="row products">
 					<div class="col-sm-4">
-						<section class="panel">
+						<div class="panel">
 							<div class="panel-heading">
 								<h2 class="panel-title">3 Month Supply</h2>
 							</div>
@@ -57,10 +65,10 @@
 							<div class="panel-footer">
 								{button}
 							</div>
-						</section>
+						</div>
 					</div>
 					<div class="col-sm-4">
-						<section class="panel">
+						<div class="panel">
 							<div class="panel-heading">
 								<h2 class="panel-title">6 Month Supply</h2>
 							</div>
@@ -70,10 +78,10 @@
 							<div class="panel-footer">
 								{button}
 							</div>
-						</section>
+						</div>
 					</div>
 					<div class="col-sm-4">
-						<section class="panel">
+						<div class="panel">
 							<div class="panel-heading">
 								<h2 class="panel-title">12 Month Supply</h2>
 							</div>
@@ -83,10 +91,12 @@
 							<div class="panel-footer">
 								{button}
 							</div>
-						</section>
+						</div>
 					</div>
 				</div><!--/.row.products-->
+				</section>
 				<!--Tabular Data-->
+				<section>
 				<div class="row tables">
 					<div class="col-sm-6">
 						{Table 1}
@@ -95,14 +105,16 @@
 						{Table 2}
 					</div>
 				</div><!--/.row.tables-->
+				</section>
 				<!--Guarantee-->
+				<section>
 				<div class="row media">
 					<div class="col-sm-3 text-center">
 					{badge}
 					</div>
 					<div class="col-sm-6">
 						<h4>Stronger Bones for 7 Years Guarantee</h4>
-						<p>When you follow directions for use of AlgaeCal Plus and Strontium Boost - we guarantee you will see increased bone density in <strong>every</strong> follow-up bone scan you have while using these 2 products - or we will refund every penny you paid for our products between your scans. This guarantee extends to every scan you have for the next 7 years! Also, if you are unsatisfied at any time you can return my product for a full refund, no questions asked! <a href="#" title="Stronger bones guarantee">Click Here for Details</a></p>
+						<p>When you follow directions for use of AlgaeCal Plus and Strontium Boost - we guarantee you will see increased bone density in <strong>every</strong> follow-up bone scan you have while using these 2 products - or we will refund every penny you paid for our products between your scans. This guarantee extends to every scan you have for the next 7 years! Also, if you are unsatisfied at any time you can return my product for a full refund, no questions asked! <a href="#" data-toggle="modal" data-target="#guaranteeModal" title="Stronger bones guarantee">Click Here for Details</a></p>
 					</div>
 					<div class="col-sm-3 text-center">
 						<div class="panel">
@@ -117,7 +129,9 @@
 						</div>
 					</div>
 				</div><!--/.row.media-->
+				</section>
 			<!--References-->
+				<section>
 				<div class="row references">
 					<div class="col-sm-4">
 						<div class="panel panel-default">
@@ -142,11 +156,12 @@
 								</ol>
 							</div>
 							<div class="panel-footer">
-								{button}
+								<a id="buyNow" href="index.html#bundles" class="btn btn-default">Buy Now</a>
 							</div>
 						</div>
 					</div>
 				</div><!--/.row.references-->
+				</section>
 			</main>
 			<!--Footer-->
 			<footer class="row">
@@ -166,9 +181,17 @@
 				</div>
 			</footer>
 		</div> <!--/.container-->
+		<div class="modal" id="guaranteeModal">
+			<div class="modal-dialog">
+				<div class="modal-content">TBA</div>
+			</div>
+		</div>
 		<!--Scripts-->
-		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<!-- 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
+		<script src="js/vendor/jquery-1.11.2.min.js"></script>
 		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/vendor/moment.min.js"></script>
+		<script src="js/vendor/moment-timezone-with-data-2012-2022.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

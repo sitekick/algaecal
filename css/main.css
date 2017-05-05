@@ -10,7 +10,16 @@ body {
        padding-bottom: 20px;
 }
 
+.products {
+/* 	display: none; */
+	opacity: 0;
+	transition: opacity 2s;
+}
 
+.products.timed-display {
+/* 	display: block; */
+	opacity: 1;
+}
 
 
 
