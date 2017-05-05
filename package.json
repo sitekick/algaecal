@@ -9,7 +9,12 @@
   "author": "Hunter Williams",
   "license": "ISC",
   "devDependencies": {
-    "browsersync": "0.0.1-security",
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-watch": "^4.3.11",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2"
   }
 }
