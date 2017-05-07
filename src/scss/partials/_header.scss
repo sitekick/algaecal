@@ -1,12 +1,18 @@
 header {
 	
 	.panel-default {
+		
 		@include panel-default;
 		
 		.panel-heading {
 			@include panel-heading;
 			padding: 5px 15px;
+		
+		@include screen-sm{
+			padding: 5px 0;
 		}
+		}
+		
 		a.panel-title {
 			font-size: 1.5em;
 			font-weight: bold;
@@ -36,8 +42,13 @@ header {
 				border-radius: 100%;
 				padding: 5px;
 			}
+		@include screen-sm{
+			padding: 5px 0;
 		}
-	}
+		}
 	
+	@include screen-sm{
+		text-align: right;
+	}
+	}
 }
-

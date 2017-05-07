@@ -1,8 +1,10 @@
 @import "partials/variables";
 @import "mixins";
 
-
+@import "partials/base";
 @import "partials/header";
 @import "partials/intro";
+@import "partials/bundles";
 @import "partials/table";
-@import "partials/base";
+@import "partials/guarantee";
+@import "partials/references";

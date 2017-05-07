@@ -9,4 +9,34 @@
 	border: inherit;
 	color: inherit;
 }
+@mixin panel-footer {
+	background: transparent;
+	border: 0;
+}
 	
+@mixin sprite-responsive-calcs($imgWidth, $imgHeight, $spriteX, $spriteY, $spriteWidth, $spriteHeight, $filename){
+	/* Params:
+		$imgWidth: width of image on the sprite file
+		$imgHeight: height of image on the sprite file
+		$spriteX: horizontal position of image on the sprite file
+		$spriteY: vertial position of image on the sprite file
+		$spriteWidth: width of the sprite file
+		$spriteHeight: height of the sprite file
+		$filename: sprite filename
+	*/
+	display: block;
+	content: "";
+	background-image: url('../img/#{$filename}');
+	background-position-x: ( $spriteX / ($spriteWidth - $imgWidth) ) * 100%;
+	background-position-y: ( $spriteY / ($spriteHeight - $imgHeight) ) * 100%;
+	background-size:  $spriteWidth / $imgWidth * 100%;
+	padding-bottom:  $imgHeight / $imgWidth  * 100%;
+	width: 100%;
+	height: 0;
+}
+
+@mixin screen-sm {
+	@media screen and (min-width: 768px){
+		@content;
+	}
+}

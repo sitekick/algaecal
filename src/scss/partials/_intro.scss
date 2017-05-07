@@ -1,9 +1,8 @@
 .jumbotron {
 	background-color: $green-dull;
-	background-image: url('../img/jumbotron_bg.png');
-	background-position: center center;
-	background-size: cover;
-	height: 100%;
+	background-image: url('../img/sprite.png');
+	background-position: 0 -535px;
+	background-repeat: repeat-x;
 	
 	h1 {
 		font-size: 2em;

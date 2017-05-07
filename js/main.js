@@ -22,7 +22,7 @@ $(document).ready(function () {
 			
 		var pstTime = moment().tz("America/Los_Angeles");
 		var compare = {
-				day : pstTime.day(),
+				day : pstTime.isoWeekday(),
 				time : pstTime.hours() * 100 + pstTime.minutes()
 			};
 		
@@ -47,14 +47,14 @@ $(document).ready(function () {
 	_wq.push({ id: 'cecdwaq3dz', onReady: function(video) {
 	
 			video.bind('timechange', function(t) {
-				if (t >= 133) 
-  					$('.products').addClass('timed-display');
+				if (t >= 5) //133
+  					$('#bundles').addClass('timed-display');
 			});
 	}});
 	//handle case where bundles may be hidden due to video playback state
 	$('#buyNow').on('click', function(e) {
-		if( !$('.products').hasClass('timed-display') );
-			$('.products').addClass('timed-display');
+		if( !$('#bundles').hasClass('timed-display') );
+			$('#bundles').addClass('timed-display');
 	})
 	
 	

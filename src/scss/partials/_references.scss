@@ -1,0 +1,64 @@
+.references {
+	
+	.panel-default {
+		@include panel-default;
+		
+		
+		.panel-heading {
+			background-color: $green-dull;
+		}
+	}
+	
+	
+	.as-seen-on {
+		
+		.panel-default{
+			box-shadow: 0 0 5px #333;
+			
+			.panel-heading{
+				color: #FFF;
+			}
+		
+			.panel-body {
+				padding: 0;
+			}
+		}
+		
+		.sprite-responsive {
+			max-width: 350px;
+			margin: 1em auto;
+		
+		&::before{
+			@include sprite-responsive-calcs(350,120,250,210,600,985,'sprite.png');
+		}
+		}
+	}
+	
+	.scientific-references {
+		
+		.panel-default{
+			
+			.panel-heading{
+				background: transparent;
+				@include panel-heading;
+				
+				.panel-title{
+					color: $blue-cyan;
+					font-size: 1.25em;
+				}
+			}
+		
+			.panel-body {
+				padding: 0;
+			
+				.text-link {
+					padding-left: 2.5em;
+				}
+			}
+			
+			.panel-footer{
+				@include panel-footer;
+			}
+		}
+	}
+}

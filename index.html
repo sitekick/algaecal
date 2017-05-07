@@ -14,18 +14,17 @@
 	<body>
 		<div class="container">
 			<header class="row">
-				<div id="logo" class="col-sm-6">
+				<div class="col-sm-6">
 					<h1 class="sr-only">AlgaeCal</h1>
 					<img src="img/logo.png" alt="algaecal logo">
 				</div>
-				<div id="contact" class="col-sm-6">
+				<div class="col-sm-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<a id="tapToTalk" class="panel-title" title="Tap to Talk">Tap to Talk <span></span></a>
 						</div>
 						<div id="speakToMessage" class="panel-body" style="visibility: hidden;">
-							<span class="glyphicon glyphicon-earphone"></span> Speak to our Bone Health Specialists!		
-						</div>
+							<span class="glyphicon glyphicon-earphone"></span> Speak to our Bone Health Specialists!						</div>
 					</div>
 				</div>
 			</header>
@@ -58,45 +57,70 @@
 						</div><!--/.panel-->
 					</div><!--/.column-->
 				</div>
-				<!--Products-->
-				<section id="bundles">
-				<div class="row products">
-					<div class="col-sm-4">
-						<div class="panel">
-							<div class="panel-heading">
-								<h2 class="panel-title">3 Month Supply</h2>
-							</div>
-							<div class="panel-body">
-								{content}
-							</div>
-							<div class="panel-footer">
-								{button}
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="panel">
-							<div class="panel-heading">
-								<h2 class="panel-title">6 Month Supply</h2>
-							</div>
-							<div class="panel-body">
-								{content}
-							</div>
-							<div class="panel-footer">
-								{button}
+				<!--Bundles-->
+				<section>
+				<div id="bundles" class="row bundles">
+					<div class="col-sm-4 bundle three-month-supply">
+						<div class="wrapper">
+							<div class="panel panel-default">
+							<div class="corner-badge"><p>20%<small>OFF</small></p></div>
+									<div class="panel-heading">
+										<h2 class="panel-title">3 Month Supply</h2>
+										<p>4 AlgaeCal Plus<br>3 Strontium Boost</p>
+									</div>
+									<div class="panel-body">
+										<div class="sprite-responsive bottles-three"></div>
+										<h3><sup>$</sup>233<small>USD</small></h3>
+										<div class="sprite-responsive highlight">
+											<p>Only <sup>$</sup><strong>2.58</strong>/Day!</p>
+										</div>
+									</div>
+									<div class="panel-footer">
+										<a href="https://www.algaecal.com/product/bone-builder-packs/" target="_blank" class="btn btn-default" title="Add to Cart"><div class="btn-badge"></div>Add to Cart <span class="glyphicon glyphicon-play"></span></a>
+									</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-4">
-						<div class="panel">
-							<div class="panel-heading">
-								<h2 class="panel-title">12 Month Supply</h2>
+					<div class="col-sm-4 bundle six-month-supply">
+						<div class="wrapper">
+							<p>Most Popular</p>
+							<div class="panel panel-default">
+								<div class="corner-badge"><p>35%<small>OFF</small></p></div>
+								<div class="panel-heading">
+									<h2 class="panel-title">6 Month Supply</h2>
+									<p>8 AlgaeCal Plus<br>6 Strontium Boost</p>
+								</div>
+								<div class="panel-body">
+									<div class="sprite-responsive bottles-six"></div>
+									<h3><sup>$</sup>337<small>USD</small></h3>
+									<div class="sprite-responsive highlight">
+										<p>Only <sup>$</sup><strong>2.09</strong>/Day!</p>
+									</div>
+								</div>
+								<div class="panel-footer">
+									<a href="https://www.algaecal.com/product/bone-builder-packs/" target="_blank" class="btn btn-default" title="Add to Cart"><div class="btn-badge"></div>Add to Cart <span class="glyphicon glyphicon-play"></span></a>
+								</div>
 							</div>
-							<div class="panel-body">
-								{content}
-							</div>
-							<div class="panel-footer">
-								{button}
+						</div>
+					</div>
+					<div class="col-sm-4 bundle twelve-month-supply">
+						<div class="wrapper">
+							<div class="panel panel-default">
+								<div class="corner-badge"><p>38%<small>OFF</small></p></div>
+								<div class="panel-heading">
+									<h2 class="panel-title">12 Month Supply</h2>
+									<p>16 AlgaeCal Plus<br>12 Strontium Boost</p>
+								</div>
+								<div class="panel-body">
+									<div class="sprite-responsive bottles-twelve"></div>
+									<h3><sup>$</sup>717<small>USD</small></h3>
+									<div class="sprite-responsive highlight">
+										<p>Only <sup>$</sup><strong>1.97</strong>/Day!</p>
+									</div>
+								</div>
+								<div class="panel-footer">
+									<a href="https://www.algaecal.com/product/bone-builder-packs/" target="_blank" class="btn btn-default" title="Add to Cart"><div class="btn-badge"></div>Add to Cart <span class="glyphicon glyphicon-play"></span></a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -189,55 +213,59 @@
 				</section>
 				<!--Guarantee-->
 				<section>
-				<div class="row media">
-					<div class="col-sm-3 text-center">
-					{badge}
-					</div>
-					<div class="col-sm-6">
-						<h4>Stronger Bones for 7 Years Guarantee</h4>
-						<p>When you follow directions for use of AlgaeCal Plus and Strontium Boost - we guarantee you will see increased bone density in <strong>every</strong> follow-up bone scan you have while using these 2 products - or we will refund every penny you paid for our products between your scans. This guarantee extends to every scan you have for the next 7 years! Also, if you are unsatisfied at any time you can return my product for a full refund, no questions asked! <a href="#" data-toggle="modal" data-target="#guaranteeModal" title="Stronger bones guarantee">Click Here for Details</a></p>
-					</div>
-					<div class="col-sm-3 text-center">
-						<div class="panel">
-							<div class="panel-body">
-								{Dean Image and signature}
-							</div>
-							<div class="panel-footer">
-								<strong>Dean Neuls<strong>, <br>
-								CEO and Co-Founder,<br>
-								AlgaeCal Inc.
+				<div class="row guarantee">
+					<div class="wrapper">
+						<div class="col-sm-3 text-center guarantee-seal">
+							<div class="sprite-responsive"></div>
+						</div>
+						<div class="col-sm-6">
+							<h4>Stronger Bones for 7 Years Guarantee</h4>
+							<p>When you follow directions for use of AlgaeCal Plus and Strontium Boost - we guarantee you will see increased bone density in <strong>every</strong> follow-up bone scan you have while using these 2 products - or we will refund every penny you paid for our products between your scans. This guarantee extends to every scan you have for the next 7 years! Also, if you are unsatisfied at any time you can return my product for a full refund, no questions asked! <a href="#" data-toggle="modal" data-target="#guaranteeModal" title="Stronger bones guarantee" class="text-link">Click Here for Details</a></p>
+						</div>
+						<div class="col-sm-3 text-center dean-neuls-ceo-algaecal">
+							<div class="panel">
+								<div class="panel-body">
+									<div class="sprite-responsive"></div>
+								</div>
+								<div class="panel-footer text-left">
+									<strong>Dean Neuls</strong>, <br>
+									CEO and Co-Founder,<br>
+									AlgaeCal Inc.
+								</div>
 							</div>
 						</div>
 					</div>
-				</div><!--/.row.media-->
+				</div><!--/.row.gurantee-->
 				</section>
 			<!--References-->
 				<section>
 				<div class="row references">
-					<div class="col-sm-4">
+					<div class="col-sm-4 as-seen-on">
 						<div class="panel panel-default">
 							<div class="panel-heading">
-								<h5 class="panel-title">As Seen On:</h5>
+								<h5 class="panel-title text-center">As Seen On:</h5>
 							</div>
 							<div class="panel-body">
-							{logos}
+							   <div class="sprite-responsive"></div>
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-8">
+					<div class="col-sm-8 scientific-references">
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h5 class="panel-title">Scientific References</h5>
 							</div>
 							<div class="panel-body">
 								<ol>
-									<li>Marques A, Ferreira RJ...</li>
-									<li>Riggs..</li>
-									<li>https://www.algaecal.com/...</li>
+									<li>Marques A, Ferreira RJ, Santos E, et al. The accuracy of osteoporotic fracture risk prediction tools: a systematic review and meta-analysis. Ann Rheum Dis. 2015 Nov;74(11):1958-67. doi:10.1136/annrheumdis-2015-207907. Epub 2015 Aug 6. PMID:26248637</li>
+									<li>Riggs BL, Melton LJ 3rd. The worldwide problem of osteoporosis: insights afforded by epidemiology. Bone. 1995 Nov;17(5 Suppl):505S-511S. PMID:8573428</li>
+									<li>https://www.algaecal.com/expert-insights/prescription-drugs-that-cause-osteoporosis/</li>
 								</ol>
+								<a href="#" class="text-link text-link-med">View Full Reference List...</a>
 							</div>
-							<div class="panel-footer">
-								<a id="buyNow" href="index.html#bundles" class="btn btn-default">Buy Now</a>
+							<div class="panel-footer text-center">
+								<a id="buyNow"href="index.html#bundles" class="btn btn-default btn-lg" title="Buy Now"><div class="btn-badge"></div>Buy Now <span class="glyphicon glyphicon-play"></span></a>
+
 							</div>
 						</div>
 					</div>

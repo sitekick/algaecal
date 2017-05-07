@@ -1,22 +1,73 @@
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding: 1em 0;
 }
-
-
 
 .row {
-	border: 1px solid #E4E4E4;
-	margin: 1em 0;
+	//border: 1px solid #E4E4E4;
+	margin: 1em -15px;
 }
 
+a {
+	
+&.btn-default{
+	position: relative;
+	background-color: $green-bright;
+	box-shadow: 0 8px 0 $green-shadow;
+	padding: .4em 0;
+	border: none;
+	color: #FFF;
+	transition: background-color .2s;
+	margin: 2em auto;
+	width: 75%;
+	font-size: 1.25em;
+	max-width: 250px;
+	
+	.btn-badge{
+		width: 70px;
+		height: 70px;
+		background-image: url('../img/sprite.png');
+		background-repeat: no-repeat;
+		background-position-x: 0%;
+		background-position-y: 43.90243%;
+		background-size: 363.63636%;
+		position: absolute;	
+		left: -35px;
+		top: -12px;
+	}
+	
+	.glyphicon {
+		font-size: .8em;
+	}
 
-.products {
-	opacity: 0;
-	transition: opacity 2s;
-
-&.products.timed-display {
-	opacity: 1;
+&.btn-lg {
+	font-size: 1.5em;
+	
+	.btn-badge{
+		top: -8px;
+		}
 }
+
+&:hover{
+	background-color: $green-shadow;
+	color: #FFF;
 }
 
+}
+
+&.text-link {
+	font-size: 1em;
+	color: $blue-cyan;
+	text-decoration: underline;
+		
+	&:hover{
+		color: $orange;
+	}
+
+&.text-link-med{
+	font-size: 1.25em;
+}
+&.text-link-lg{
+	font-size: 1.5em;
+}
+}//.text-link
+}
