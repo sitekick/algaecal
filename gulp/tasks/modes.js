@@ -6,11 +6,6 @@ var gulp 			= require('gulp'),
 gulp.task('default',['sass','watch']);
 
 
-/*
-gulp.task('style', function(){
-	runSequence('sass','watch','serve');
-});
-*/
-gulp.task('style', function(){
+gulp.task('build', function(){
 	runSequence('sass','watch','serve');
 });

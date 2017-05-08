@@ -1,0 +1,32 @@
+.list-inline {
+	
+	li {
+		padding: .5em 0;
+		color: $grey;
+		
+		a{
+			color: $grey;
+		
+		&:hover{
+			color: $green-bright;
+		}
+		}
+	
+	&:after {
+		content: " |";
+	}
+	@include screen-sm{
+		padding: 0;
+	}
+	
+	&:last-child{
+		
+	&:after {
+		content: "";
+	}
+	}
+	}
+@include screen-sm{
+	margin-top: 1em;
+}	
+}

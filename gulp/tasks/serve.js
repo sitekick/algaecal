@@ -3,19 +3,6 @@ var gulp = require('gulp'),
 	config 	= require('../config');
 	
 
-/*
-gulp.task('serve', function () {
-    
-    bs.init({
-		proxy: 'algaecal.imac',
-		ui : false
-	});
-	
-	gulp.watch('./css/style.css').on('change', bs.reload);
-	
-});
-*/
-
 gulp.task('serve', function () {
     
     bs.init({

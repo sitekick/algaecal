@@ -1,11 +1,36 @@
 /* ---Colors--- */
-/*---Fonts---*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: Glober, Roboto, sans-serif;
+  font-size: 1em;
+}
+
+div[data-testid="big-play-button__button"] {
+  border-radius: 20px;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.8) !important;
+  background: #DB1814 !important;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAACiCAYAAABh2nDdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAulJREFUeNrs3d1tGlEQBtAlSgEpgXSAO8AdxB2QDuwONhWQDpxUAB14OyAdmA5IB+SOvDdCSHnLn/WdI91XP4z1aYY77DIMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAvnc/nQzsrlYCs4JdTOxvVgKzgd7t23qkKZAW/PLezVhnICn43qg7kBb88tbNUJcgKfr/4+6BSkBX8buviD/KCf7bzh8zgd/cqB3nBt/OH0OD3i7+1KkJW8O38ITj4/eJvqaKQFXw7fwgNfvfo4i/PQgleV/D/0J8+tnO3WCy+qXKGN0pAU5/3D3b+Oj5ZHf/SNHf/7yqu45Nj3Y7n/AWfQHXZV4/5bpXCqE/GqH+tLvw+uvjT8cmymrv/Ril0fHI6/qX93P1d/Ak+QcEvx8HO36hPnOXwsvMflULHJ6fjX5oGO38dnzjr4WXn72EfwSdM7fx3XvBp1Cdn1L9m56/jE6jv/D3so+MT1PEv2fnr+ASqC7+Dh30EnzzLefQflcKoT8aof60u/Grnf/Sf1PHJsZpHfzt/wSfMz52/Ugg+WWrk/6oMgk+OL+3c+oLPv/dWCfgLapdfO/29Uuj4ZJjauRF6wSfHpxb4Wys8oz4ZjvNoPymFjk+G/TzaC73gE6Au8B5a4L2Rx6hPCM/h6/iE+dwCfyP0Oj45o73dvOATZBq8XdeoT5S+mxd6HZ8Ax8Ev6Oj4ROm7eaEXfAL0Czyf5436hPCqLB2fMH03L/Q6PiGj/Z3v2ev45Kiwvxd6wSfHg908/KfOv1+97nqlspAT/Ec/aw05wT/5UQvICn6N9kuVhJzgjyoIOcE/+alqyAr+zgUe5AS/uvy9ikFO8O3mISz4W6M95ATfbh7Cgv9kNw9ZwR9VBXKC/+wCD7KCbzcPYcHfqAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvE4/BBgAB9Vp0xXzB8AAAAAASUVORK5CYII=") repeat scroll 0% 0%/100% 100%, linear-gradient(to bottom, #DB1814 0%, #DB1814 40%, #AF1E11 90%) !important;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAACiCAYAAABh2nDdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAulJREFUeNrs3d1tGlEQBtAlSgEpgXSAO8AdxB2QDuwONhWQDpxUAB14OyAdmA5IB+SOvDdCSHnLn/WdI91XP4z1aYY77DIMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAvnc/nQzsrlYCs4JdTOxvVgKzgd7t23qkKZAW/PLezVhnICn43qg7kBb88tbNUJcgKfr/4+6BSkBX8buviD/KCf7bzh8zgd/cqB3nBt/OH0OD3i7+1KkJW8O38ITj4/eJvqaKQFXw7fwgNfvfo4i/PQgleV/D/0J8+tnO3WCy+qXKGN0pAU5/3D3b+Oj5ZHf/SNHf/7yqu45Nj3Y7n/AWfQHXZV4/5bpXCqE/GqH+tLvw+uvjT8cmymrv/Ril0fHI6/qX93P1d/Ak+QcEvx8HO36hPnOXwsvMflULHJ6fjX5oGO38dnzjr4WXn72EfwSdM7fx3XvBp1Cdn1L9m56/jE6jv/D3so+MT1PEv2fnr+ASqC7+Dh30EnzzLefQflcKoT8aof60u/Grnf/Sf1PHJsZpHfzt/wSfMz52/Ugg+WWrk/6oMgk+OL+3c+oLPv/dWCfgLapdfO/29Uuj4ZJjauRF6wSfHpxb4Wys8oz4ZjvNoPymFjk+G/TzaC73gE6Au8B5a4L2Rx6hPCM/h6/iE+dwCfyP0Oj45o73dvOATZBq8XdeoT5S+mxd6HZ8Ax8Ev6Oj4ROm7eaEXfAL0Czyf5436hPCqLB2fMH03L/Q6PiGj/Z3v2ev45Kiwvxd6wSfHg908/KfOv1+97nqlspAT/Ec/aw05wT/5UQvICn6N9kuVhJzgjyoIOcE/+alqyAr+zgUe5AS/uvy9ikFO8O3mISz4W6M95ATfbh7Cgv9kNw9ZwR9VBXKC/+wCD7KCbzcPYcHfqAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvE4/BBgAB9Vp0xXzB8AAAAAASUVORK5CYII=") repeat scroll 0% 0%/100% 100%, -webkit-linear-gradient(top, #DB1814 0%, #DB1814 40%, #AF1E11 90%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#AF1E11', endColorstr='#db1814',GradientType=0 );
+}
+div[data-testid="big-play-button__button"]:hover {
+  background: red url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP4AAACiCAYAAABh2nDdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAulJREFUeNrs3d1tGlEQBtAlSgEpgXSAO8AdxB2QDuwONhWQDpxUAB14OyAdmA5IB+SOvDdCSHnLn/WdI91XP4z1aYY77DIMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAvnc/nQzsrlYCs4JdTOxvVgKzgd7t23qkKZAW/PLezVhnICn43qg7kBb88tbNUJcgKfr/4+6BSkBX8buviD/KCf7bzh8zgd/cqB3nBt/OH0OD3i7+1KkJW8O38ITj4/eJvqaKQFXw7fwgNfvfo4i/PQgleV/D/0J8+tnO3WCy+qXKGN0pAU5/3D3b+Oj5ZHf/SNHf/7yqu45Nj3Y7n/AWfQHXZV4/5bpXCqE/GqH+tLvw+uvjT8cmymrv/Ril0fHI6/qX93P1d/Ak+QcEvx8HO36hPnOXwsvMflULHJ6fjX5oGO38dnzjr4WXn72EfwSdM7fx3XvBp1Cdn1L9m56/jE6jv/D3so+MT1PEv2fnr+ASqC7+Dh30EnzzLefQflcKoT8aof60u/Grnf/Sf1PHJsZpHfzt/wSfMz52/Ugg+WWrk/6oMgk+OL+3c+oLPv/dWCfgLapdfO/29Uuj4ZJjauRF6wSfHpxb4Wys8oz4ZjvNoPymFjk+G/TzaC73gE6Au8B5a4L2Rx6hPCM/h6/iE+dwCfyP0Oj45o73dvOATZBq8XdeoT5S+mxd6HZ8Ax8Ev6Oj4ROm7eaEXfAL0Czyf5436hPCqLB2fMH03L/Q6PiGj/Z3v2ev45Kiwvxd6wSfHg908/KfOv1+97nqlspAT/Ec/aw05wT/5UQvICn6N9kuVhJzgjyoIOcE/+alqyAr+zgUe5AS/uvy9ikFO8O3mISz4W6M95ATfbh7Cgv9kNw9ZwR9VBXKC/+wCD7KCbzcPYcHfqAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvE4/BBgAB9Vp0xXzB8AAAAAASUVORK5CYII=") repeat scroll 0% 0%/100% 100% !important;
+}
+
 body {
   padding: 1em 0;
 }
 
 .row {
   margin: 1em -15px;
+}
+
+main {
+  padding-top: 1em;
 }
 
 a.btn-default {
@@ -31,7 +56,7 @@ a.btn-default .btn-badge {
   background-position-y: 43.90243%;
   background-size: 363.63636%;
   position: absolute;
-  left: -35px;
+  left: -40px;
   top: -12px;
 }
 a.btn-default .glyphicon {
@@ -41,15 +66,21 @@ a.btn-default.btn-lg {
   font-size: 1.5em;
 }
 a.btn-default.btn-lg .btn-badge {
-  top: -8px;
+  top: -15px;
+  width: 90px;
+  height: 90px;
 }
 a.btn-default:hover {
   background-color: #3A8F41;
   color: #FFF;
 }
+a.btn-default:focus {
+  background-color: #46AC4E;
+  color: #FFF;
+}
 a.text-link {
   font-size: 1em;
-  color: #53B8BF;
+  color: #54B8CD;
   text-decoration: underline;
 }
 a.text-link:hover {
@@ -66,37 +97,35 @@ header .panel-default {
   background-color: transparent;
   border: none;
   box-shadow: none;
+  margin-bottom: 0;
 }
 header .panel-default .panel-heading {
   background-color: inherit;
   border: inherit;
   color: inherit;
-  padding: 5px 15px;
+  padding: 5px 0;
 }
-@media screen and (min-width: 768px) {
-  header .panel-default .panel-heading {
-    padding: 5px 0;
-  }
-}
-header .panel-default a.panel-title {
+header .panel-default .panel-heading a.panel-title {
   font-size: 1.5em;
   font-weight: bold;
-  padding: 0 5px;
+  padding: 0 3px;
+  white-space: nowrap;
 }
-header .panel-default a.panel-title span {
-  color: #53B8BF;
+header .panel-default .panel-heading a.panel-title span {
+  color: #54B8CD;
 }
-header .panel-default a.panel-title:hover {
+header .panel-default .panel-heading a.panel-title:hover {
   text-decoration: none;
-  background: #53B8BF;
+  background: #54B8CD;
   color: #FFF;
   border-radius: 5px;
 }
-header .panel-default a.panel-title:hover span {
+header .panel-default .panel-heading a.panel-title:hover span {
   color: inherit;
 }
 header .panel-default .panel-body {
-  padding: 5px 15px;
+  padding: 5px 0px;
+  white-space: nowrap;
 }
 header .panel-default .panel-body .glyphicon {
   background-color: #46AC4E;
@@ -105,30 +134,33 @@ header .panel-default .panel-body .glyphicon {
   padding: 5px;
 }
 @media screen and (min-width: 768px) {
-  header .panel-default .panel-body {
-    padding: 5px 0;
-  }
-}
-@media screen and (min-width: 768px) {
   header .panel-default {
     text-align: right;
   }
 }
 
 .jumbotron {
+  padding: 15px;
   background-color: #4C813D;
   background-image: url("../img/sprite.png");
   background-position: 0 -535px;
   background-repeat: repeat-x;
+  margin-bottom: 0;
 }
 .jumbotron h1 {
-  font-size: 2em;
+  font-size: 1.75em;
   margin: 0;
   font-weight: normal;
   line-height: 1.4;
 }
 .jumbotron h1 strong {
   border-bottom: 4px solid #DB1814;
+  font-size: 1.125em;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron h1 strong {
+    white-space: nowrap;
+  }
 }
 .jumbotron .panel-default {
   background-color: transparent;
@@ -141,14 +173,35 @@ header .panel-default .panel-body .glyphicon {
   background-color: inherit;
   border: inherit;
   color: inherit;
-  font-size: 1.6em;
+  font-size: 2em;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
 }
-.jumbotron .panel-default .panel-heading span:before, .jumbotron .panel-default .panel-heading span:after {
-  content: "\0336";
+.jumbotron .panel-default .panel-heading::before, .jumbotron .panel-default .panel-heading::after {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+}
+@media screen and (min-width: 768px) {
+  .jumbotron .panel-default .panel-heading::before, .jumbotron .panel-default .panel-heading::after {
+    width: 50px;
+  }
 }
 .container .jumbotron {
   border-radius: 0;
+}
+@media screen and (min-width: 768px) {
+  .container .jumbotron {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 325px;
+  }
 }
 
 .video .panel-default {
@@ -156,25 +209,36 @@ header .panel-default .panel-body .glyphicon {
   border: none;
   box-shadow: none;
 }
-.video .panel-heading {
+.video .panel-default .panel-heading {
   background-color: inherit;
   border: inherit;
   color: inherit;
 }
-.video .panel-heading .panel-title {
+.video .panel-default .panel-heading .panel-title {
   font-weight: normal;
   font-size: 1.25em;
   line-height: 1.3;
 }
+@media screen and (min-width: 768px) {
+  .video .panel-default .panel-body {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .video {
+    background: #F0F8FA;
+    height: 325px;
+  }
+}
 
 .bundles {
-  height: 0;
-  -webkit-transition: height 3s;
-  transition: height 3s;
+  max-height: 0;
+  -webkit-transition: max-height 2s;
+  transition: max-height 2s;
   overflow: hidden;
 }
 .bundles .bundle {
-  margin: 3em 0;
+  margin: 2em 0;
 }
 .bundles .bundle .wrapper {
   padding: .5em;
@@ -201,7 +265,7 @@ header .panel-default .panel-body .glyphicon {
   margin-bottom: .25em;
 }
 .bundles .bundle .wrapper .panel-default .panel-heading p {
-  color: #53B8BF;
+  color: #54B8CD;
   font-size: 1.125em;
 }
 .bundles .bundle .wrapper .panel-default .panel-body {
@@ -272,6 +336,23 @@ header .panel-default .panel-body .glyphicon {
 .bundles .bundle .wrapper .corner-badge p small {
   font-size: .8em;
   display: block;
+  margin-left: 5px;
+}
+@media screen and (min-width: 768px) {
+  .bundles .bundle .wrapper .corner-badge {
+    right: auto;
+    width: 100%;
+    left: 0;
+    height: 30px;
+    top: -28px;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: none;
+  }
+  .bundles .bundle .wrapper .corner-badge p small {
+    display: inline;
+  }
 }
 .bundles .bundle .sprite-responsive.bottles-three {
   max-width: 250px;
@@ -371,13 +452,38 @@ header .panel-default .panel-body .glyphicon {
   height: 0;
   z-index: -1;
 }
+.bundles .bundle.six-month-supply {
+  margin-bottom: 3em;
+}
 .bundles .bundle.six-month-supply .wrapper {
-  padding-top: .2em;
-  background-color: #2A7D9A;
+  padding-top: .5em;
+  background-color: #008BA4;
+}
+@media screen and (min-width: 768px) {
+  .bundles .bundle.six-month-supply {
+    margin: 0;
+  }
+  .bundles .bundle.six-month-supply .wrapper > p {
+    margin-bottom: 1.85em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .bundles .bundle {
+    margin: 3.25em 0 1em;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .bundles .bundle .wrapper {
+    margin: 0.25em;
+  }
 }
 .bundles.bundles.timed-display {
-  opacity: 1;
-  height: auto;
+  max-height: 2000px;
+}
+@media screen and (min-width: 768px) {
+  .bundles {
+    margin-top: 2.5em;
+  }
 }
 
 .tables .panel-default {
@@ -413,6 +519,10 @@ header .panel-default .panel-body .glyphicon {
 .table thead {
   border-top: 12px solid #000;
 }
+.table thead th {
+  padding: 6px 4px;
+  font-weight: normal;
+}
 .table thead th:nth-child(2) {
   text-align: right;
 }
@@ -420,6 +530,8 @@ header .panel-default .panel-body .glyphicon {
   border-top: 6px solid #000;
 }
 .table tbody tr td {
+  padding: 6px 4px;
+  font-weight: bold;
   border: none;
 }
 .table tbody tr td:nth-child(2) {
@@ -441,9 +553,6 @@ header .panel-default .panel-body .glyphicon {
   margin: 15px;
   background: #FFF;
   overflow: hidden;
-}
-.guarantee .wrapper > div {
-  height: 100%;
 }
 .guarantee .guarantee-seal .sprite-responsive {
   max-width: 165px;
@@ -468,6 +577,11 @@ header .panel-default .panel-body .glyphicon {
   padding-bottom: 100%;
   width: 100%;
   height: 0;
+}
+@media screen and (min-width: 768px) {
+  .guarantee .guarantee-seal {
+    margin-top: 2em;
+  }
 }
 .guarantee .dean-neuls-ceo-algaecal .panel {
   background-color: transparent;
@@ -510,6 +624,32 @@ header .panel-default .panel-body .glyphicon {
   font-size: 1.5em;
 }
 
+.modal-backdrop.in {
+  opacity: .75;
+}
+
+.modal-header {
+  overflow: hidden;
+}
+.modal-header h1 {
+  color: #4C813D;
+}
+.modal-header button {
+  border: 0;
+  float: right;
+  background: #FFF;
+  color: #333;
+  font-size: 1.25em;
+  padding: 0;
+}
+.modal-header button:hover {
+  color: #000;
+}
+
+.modal-body h3 {
+  color: #008BA4;
+}
+
 .references .panel-default {
   background-color: transparent;
   border: none;
@@ -523,6 +663,10 @@ header .panel-default .panel-body .glyphicon {
 }
 .references .as-seen-on .panel-default .panel-heading {
   color: #FFF;
+}
+.references .as-seen-on .panel-default .panel-heading .panel-title {
+  font-size: 1.25em;
+  font-weight: normal;
 }
 .references .as-seen-on .panel-default .panel-body {
   padding: 0;
@@ -558,16 +702,48 @@ header .panel-default .panel-body .glyphicon {
   color: inherit;
 }
 .references .scientific-references .panel-default .panel-heading .panel-title {
-  color: #53B8BF;
+  color: #54B8CD;
   font-size: 1.25em;
 }
 .references .scientific-references .panel-default .panel-body {
   padding: 0;
 }
 .references .scientific-references .panel-default .panel-body .text-link {
-  padding-left: 2.5em;
+  padding-left: 1em;
 }
 .references .scientific-references .panel-default .panel-footer {
   background: transparent;
   border: 0;
+}
+@media screen and (min-width: 768px) {
+  .references .scientific-references .panel-default .panel-footer {
+    text-align: left;
+  }
+}
+
+.list-inline li {
+  padding: .5em 0;
+  color: #67676E;
+}
+.list-inline li a {
+  color: #67676E;
+}
+.list-inline li a:hover {
+  color: #46AC4E;
+}
+.list-inline li:after {
+  content: " |";
+}
+@media screen and (min-width: 768px) {
+  .list-inline li {
+    padding: 0;
+  }
+}
+.list-inline li:last-child:after {
+  content: "";
+}
+@media screen and (min-width: 768px) {
+  .list-inline {
+    margin-top: 1em;
+  }
 }

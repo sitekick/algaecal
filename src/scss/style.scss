@@ -1,6 +1,8 @@
-@import "partials/variables";
+@import "variables";
 @import "mixins";
+@import "fonts";
 
+@import "partials/play-button";
 @import "partials/base";
 @import "partials/header";
 @import "partials/intro";
@@ -8,3 +10,4 @@
 @import "partials/table";
 @import "partials/guarantee";
 @import "partials/references";
+@import "partials/footer";

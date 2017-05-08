@@ -3,8 +3,11 @@ body {
 }
 
 .row {
-	//border: 1px solid #E4E4E4;
 	margin: 1em -15px;
+}
+
+main {
+	padding-top: 1em;
 }
 
 a {
@@ -31,7 +34,7 @@ a {
 		background-position-y: 43.90243%;
 		background-size: 363.63636%;
 		position: absolute;	
-		left: -35px;
+		left: -40px;
 		top: -12px;
 	}
 	
@@ -43,7 +46,9 @@ a {
 	font-size: 1.5em;
 	
 	.btn-badge{
-		top: -8px;
+		top: -15px;
+		width: 90px;
+		height: 90px;
 		}
 }
 
@@ -51,7 +56,10 @@ a {
 	background-color: $green-shadow;
 	color: #FFF;
 }
-
+&:focus{
+	background-color: $green-bright;
+	color: #FFF;
+}
 }
 
 &.text-link {

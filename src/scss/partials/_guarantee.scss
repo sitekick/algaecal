@@ -9,14 +9,7 @@
 	.wrapper {
 		margin: 15px;
 		background: #FFF;
-		
 		overflow: hidden;
-		
-		> div {
-			
-			height: 100%;
-				
-		}
 	}
 	
 	.guarantee-seal {
@@ -29,6 +22,10 @@
 			@include sprite-responsive-calcs(165,165,0,360,600,985,'sprite.png');		
 		}
 		}
+	
+	@include screen-sm{
+		margin-top: 2em;
+	}
 	}
 	
 	.dean-neuls-ceo-algaecal {
@@ -58,5 +55,37 @@
 	h4 {
 		color: $orange;
 		font-size: 1.5em;
+	}
+}
+
+.modal-backdrop.in{
+	opacity: .75;
+}
+.modal-header {
+
+	overflow: hidden;
+	
+	h1 {
+		color: $green-dull;
+	}
+	
+	button {
+		border: 0;
+		float: right;
+		background: #FFF;
+		color: #333;
+		font-size: 1.25em;
+		padding: 0;
+		
+		&:hover{
+			color: #000;
+		}
+		}
+}
+
+.modal-body {
+	
+	h3 {
+		color: $blue-green;
 	}
 }

@@ -1,11 +1,11 @@
 .bundles {
-	height: 0;
-	transition: height 3s;
+	max-height: 0;
+	transition: max-height 2s;
 	overflow: hidden;
 	
 	.bundle {
-		margin: 3em 0;
-	
+		margin: 2em 0;
+		
 		.wrapper {
 			padding: .5em;
 			margin: 0 1.5em;
@@ -104,8 +104,28 @@
 					small {
 						font-size: .8em;
 						display: block;
+						margin-left: 5px;
 					}
 				}
+			
+			@include screen-sm{
+				right: auto;
+				width: 100%;
+				left: 0;
+				height: 30px;
+				top: -28px;
+				border-radius: 0;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				box-shadow: none;
+				
+				p{
+					
+					small {
+						display: inline;
+					}
+				}
+			}
 			}
 		}
 		
@@ -148,21 +168,44 @@
 			z-index: -1;
 		}
 		}
-		
-			
 		}
-	
 	
 	&.six-month-supply{
+		margin-bottom: 3em;
+		
 		.wrapper {
-			padding-top: .2em;
+			padding-top: .5em;
 			background-color: $blue-green;
 		}
+	
+	@include screen-sm{
+		margin: 0;
+		
+		.wrapper{
+			> p {
+				margin-bottom: 1.85em;
+			}
+		}
 	}
+	}
+	
+	@include screen-sm{
+		//.bundle
+		margin: 3.25em 0 1em;
+		padding-right: 0;
+		padding-left: 0;
+		
+		.wrapper {
+			margin: .25em
+		}
+	}
+	
 	}		
 	
 &.bundles.timed-display {
-	opacity: 1;
-	height: auto;
+	max-height: 2000px;
+}
+@include screen-sm{
+	margin-top: 2.5em;
 }
 }

@@ -36,7 +36,8 @@
 		border-top: 12px solid #000;
 		
 		th {
-				
+			padding: 6px 4px;
+			font-weight: normal;	
 		&:nth-child(2){
 			text-align: right;
 		}
@@ -49,6 +50,8 @@
 		tr {
 			
 			td {
+				padding: 6px 4px;
+				font-weight: bold;
 				border: none;
 			
 			&:nth-child(2){

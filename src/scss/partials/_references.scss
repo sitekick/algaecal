@@ -3,12 +3,10 @@
 	.panel-default {
 		@include panel-default;
 		
-		
 		.panel-heading {
 			background-color: $green-dull;
 		}
 	}
-	
 	
 	.as-seen-on {
 		
@@ -17,6 +15,11 @@
 			
 			.panel-heading{
 				color: #FFF;
+				
+				.panel-title{
+					font-size: 1.25em;
+					font-weight: normal;
+				}
 			}
 		
 			.panel-body {
@@ -52,12 +55,16 @@
 				padding: 0;
 			
 				.text-link {
-					padding-left: 2.5em;
+					padding-left: 1em;
 				}
 			}
 			
 			.panel-footer{
 				@include panel-footer;
+				
+			@include screen-sm{
+				text-align: left;
+			}	
 			}
 		}
 	}

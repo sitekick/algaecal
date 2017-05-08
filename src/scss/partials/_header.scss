@@ -3,48 +3,48 @@ header {
 	.panel-default {
 		
 		@include panel-default;
+		margin-bottom: 0;
 		
 		.panel-heading {
 			@include panel-heading;
-			padding: 5px 15px;
-		
-		@include screen-sm{
 			padding: 5px 0;
-		}
-		}
 		
-		a.panel-title {
+			a.panel-title {
 			font-size: 1.5em;
 			font-weight: bold;
-			padding: 0 5px;
+			padding: 0 3px;
+			white-space: nowrap;
 			
 			span {
 				color: $blue-cyan;
 			}
 		
-		&:hover {
-			text-decoration: none;
-			background: $blue-cyan;
-			color: #FFF;
-			border-radius: 5px;
-			
-			span {
-				color: inherit;
+			&:hover {
+				text-decoration: none;
+				background: $blue-cyan;
+				color: #FFF;
+				border-radius: 5px;
+				
+				span {
+					color: inherit;
+				}
+			}	
 			}
-		}	
 		}
 		
+		
+		
 		.panel-body {
-			padding: 5px 15px;
+			padding: 5px 0px;
+			white-space: nowrap;
+			
 			.glyphicon {
 				background-color: $green-bright;
 				color: #FFF;
 				border-radius: 100%;
 				padding: 5px;
 			}
-		@include screen-sm{
-			padding: 5px 0;
-		}
+
 		}
 	
 	@include screen-sm{
